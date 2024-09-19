@@ -1,9 +1,10 @@
 *{
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     list-style-type: none;
     background: rgb(44, 40, 40);
     color: #e0dede;
+    max-width: 1440px;
 }
 
 .headerSection{
@@ -11,7 +12,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-f}
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .headerSection  a{
     text-decoration: none;
 }
@@ -36,6 +41,7 @@ box-shadow: 5px 5px 6px rgb(35, 40, 40);
 
 .heroSection {
     position: relative;
+    margin: auto; 
 }
 .heroSection:before, .heroSection:after {
     content: '';
