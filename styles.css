@@ -10,6 +10,10 @@
 }
 
 
+html{
+    margin-left: auto;
+    margin-right: auto;
+}
  /* ////////////////////////////////////////////////////////////////////
  ////////////////////  HeaderSection  /////////////////////////////////
  //////////////////////////////////////////////////////////////////// */
@@ -71,19 +75,39 @@
     background-image: linear-gradient(to top, rgba(44, 40, 40,1), rgba(255,255,255,0));
 }
 
-.heroSection input{
+.searchFieldContainer{
+    display: flex ;
+    align-items: center;    
+    justify-content: space-between;
+    width: 700px;
+
     margin-left: 40px;
-    padding: 30px;
-    width: 40vw;
+    padding-right: 15px;
+    border: 5px solid #fafafa;
+    border-radius: 45px;
+}
+
+.heroSection input{
+    padding: 27px;
+    font-size: 23px;
+    color: #fafafa;
+    width: 100%;
 
     background-color: transparent;
-    border: 5px solid #fafafa;
-    border-radius: 40px;
+   
+    border: none;    
     outline: none;
-
-
-
 }
+
+.heroSection input::placeholder{
+    color: #fafafa;
+}
+
+.anvil{
+    background: transparent;
+}
+
+
 
 /* ////////////////////////////////////////////////////////////////////
  ////////////////////  GoodsSection  /////////////////////////////////
@@ -99,7 +123,7 @@
     margin-bottom: 30px;
 }
 
-.listOfGoods{
+.armoryList{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
