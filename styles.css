@@ -108,28 +108,35 @@ html{
     color: #fafafa;
 }
 
-.anvil{
+    .anvil{
     background: transparent;
 }
 
 /* ////////////////////////////////////////////////////////////////////
  ////////////////////  CatalogOfGoodsSection  /////////////////////////////////
  //////////////////////////////////////////////////////////////////// */
+    .catalogSection h3{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 20px;
+}
 
-.catalogListOfWeapons{
+
+.catalogListOfWeapons, .catalogListOfArmor {
     display: flex;
+    flex-wrap: wrap;
     padding: 30px;
-    gap: 30px;
+    gap: 45px;
 }
 
 .catalogElement{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     
 
-    width: 33%;
+    width: calc(32% - 15px);
     height: 200px;
 
     background: linear-gradient(to top, rgb(41, 41, 41), rgba(104, 90, 90, 0));
@@ -152,6 +159,11 @@ html{
 .catalogElement object{
     z-index: 0;
 }
+
+.left .catalogElement  > a{
+    flex-direction: row-reverse;
+}
+
 /* ////////////////////////////////////////////////////////////////////
  ////////////////////  GoodsSection  /////////////////////////////////
  //////////////////////////////////////////////////////////////////// */
@@ -203,7 +215,7 @@ flex-direction: column;
 }
 
 .aboutUsSection h2{
-    font-size: 40px;
+    font-size: 60px;
     text-decoration: underline;
 }
 
