@@ -15,7 +15,8 @@ html{
     margin-right: auto;
     background: url(./images/sparksBackground.jpg);
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 
@@ -80,37 +81,6 @@ html{
     background-image: linear-gradient(to top, rgba(44, 40, 40,1), rgba(255,255,255,0));
 }
 
-.searchFieldContainer{
-    display: flex ;
-    align-items: center;    
-    justify-content: space-between;
-    width: 700px;
-
-    margin-left: 40px;
-    padding-right: 15px;
-    border: 5px solid #fafafa;
-    border-radius: 45px;
-}
-
-.heroSection input{
-    padding: 27px;
-    font-size: 23px;
-    color: #fafafa;
-    width: 100%;
-
-    background-color: transparent;
-   
-    border: none;    
-    outline: none;
-}
-
-.heroSection input::placeholder{
-    color: #fafafa;
-}
-
-    .anvil{
-    background: transparent;
-}
 
 /* ////////////////////////////////////////////////////////////////////
  ////////////////////  CatalogOfGoodsSection  /////////////////////////////////
@@ -162,38 +132,6 @@ html{
 
 .left .catalogElement  > a{
     flex-direction: row-reverse;
-}
-
-/* ////////////////////////////////////////////////////////////////////
- ////////////////////  GoodsSection  /////////////////////////////////
- //////////////////////////////////////////////////////////////////// */
-
-.goodsSection{
-    padding: 120px 30px;
-}
-
-.goodsHeader{
-    font-size: 40px;
-    text-decoration: underline;
-    margin-bottom: 30px;
-}
-
-.armoryList{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 20px;
-}
-
-.listElement{
-display: flex;
-flex-direction: column;
-}
-
-.listElement img, .listElement p{
-    width: 256px;
 }
 
 
