@@ -1,0 +1,64 @@
+{
+    "katana": [
+        {
+            "id": "1",
+            "name": "Ryu_no_En",
+            "img_src": "https://i.pinimg.com/564x/43/00/df/4300df04f5a20d81f6443707193d4e5f.jpg",
+            "img_alt": "katana"
+        },
+        {
+            "id": "1",
+            "name": "Mizu_no_Ken",
+            "img_src": "https://i.pinimg.com/564x/84/a9/00/84a90058fbe35caa44ee7857bee38d8b.jpg",
+            "img_alt": "katana"
+        },
+        {
+            "id": "3",
+            "name": "Kaze_no_Tsurugi",
+            "img_src": "https://i.pinimg.com/564x/9f/cd/33/9fcd33cbe872f4ddaa97a72df92382d1.jpg",
+            "img_alt": "katana"
+          },
+          {
+            "id": "4",
+            "name": "Yami_no_Seishin",
+            "img_src": "https://i.pinimg.com/564x/6e/bb/24/6ebb24a09ae51b7e2d21607b5a136b71.jpg",
+            "img_alt": "katana"
+          },
+          {
+            "id": "5",
+            "name": "Hikari_no_Yari",
+            "img_src": "https://i.pinimg.com/564x/5c/cc/20/5ccc20d353fa3dd95cfc74df8e4d5aeb.jpg",
+            "img_alt": "katana"
+          },
+          {
+            "id": "6",
+            "name": "Honoo_no_Kiba",
+            "img_src": "https://i.pinimg.com/564x/a3/ee/4c/a3ee4c68e7b0e9a92c9f6234e6e695b9.jpg",
+            "img_alt": "katana"
+          },
+          {
+            "id": "7",
+            "name": "Shimo_no_Ha",
+            "img_src": "https://i.pinimg.com/564x/9b/bf/23/9bbf23f71f877af4b7c9b6052a1e8577.jpg",
+            "img_alt": "katana"
+          },
+          {
+            "id": "8",
+            "name": "Raikou_no_Tsurugi",
+            "img_src": "https://i.pinimg.com/564x/f2/4d/3d/f24d3d4b929733aa90a10ab87f6f0577.jpg",
+            "img_alt": "katana"
+          },
+          {
+            "id": "9",
+            "name": "Tsuchi_no_Kiba",
+            "img_src": "https://i.pinimg.com/564x/d2/4d/2f/d24d2f94a2527db3dfb4a5d041f37d9f.jpg",
+            "img_alt": "katana"
+          },
+          {
+            "id": "10",
+            "name": "Kumo_no_Hikari",
+            "img_src": "https://i.pinimg.com/564x/21/ab/1e/21ab1e1e35fb8b98a39195ff56ea4a94.jpg",
+            "img_alt": "katana"
+          }
+    ]
+  }
