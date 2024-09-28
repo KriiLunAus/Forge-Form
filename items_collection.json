@@ -1,0 +1,34 @@
+{
+  "longswords": {
+    "god-tier": [
+      {
+        "name": "Eldershard, Blade of the Eternal Stars",
+        "description": "A longsword infused with the essence of the cosmos, said to cut through the very fabric of reality."
+      },
+      {
+        "name": "Frostfang, Sword of the Eternal Winter",
+        "description": "This blade embodies the chill of winter, freezing foes in their tracks."
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Bloodsong, the Whispering Blade",
+        "description": "A blade that sings a haunting melody, instilling fear in the hearts of its enemies."
+      },
+      {
+        "name": "Dawnbringer, Sword of the First Light",
+        "description": "Forged from the first light of dawn, this sword banishes darkness and evil."
+      }
+    ],
+    "arcane": [
+      {
+        "name": "Stormrend, Blade of Thunder",
+        "description": "A sword that crackles with the energy of storms, bringing forth thunder with each strike."
+      },
+      {
+        "name": "Nightshade, the Shadowed Edge",
+        "description": "A blade that blends into the shadows, it strikes without warning."
+      }
+    ]
+  }
+}
