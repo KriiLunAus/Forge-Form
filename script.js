@@ -14,14 +14,11 @@ async function fetchItems(catalogName) {
 
 // function for renderingItems
 const catalogSection = document.getElementById("catalogSection");
+const catalogWrapper = document.getElementById("catalogWrapper");
 const closeModal = document.createElement("div");
 const cardWrapper = document.createElement("div");
 
 function renderItems(data, catalogName) {
-  if (cardWrapper.parentNode) {
-    cardWrapper.parentNode.removeChild(cardWrapper);
-  }
-
   const closeModalWrapper = document.createElement("div");
   const modal = document.createElement("div");
 
@@ -30,13 +27,14 @@ function renderItems(data, catalogName) {
   cardWrapper.className = "cardModalWrapper";
   modal.className = "cardModal";
 
-  modal.setAttribute("aria-hidden", "false"); // Modal is visible
-  cardWrapper.setAttribute("role", "dialog"); // Indicate it's a dialog
+  // modal.setAttribute("aria-hidden", "false"); // Modal is visible
+  // cardWrapper.setAttribute("role", "dialog"); // Indicate it's a dialog
 
   closeModalWrapper.appendChild(closeModal);
   modal.appendChild(closeModalWrapper);
   cardWrapper.appendChild(modal);
   catalogSection.appendChild(cardWrapper);
+
   const renderedData = data[catalogName];
 
   for (const category in renderedData) {
@@ -69,22 +67,27 @@ function renderItems(data, catalogName) {
 
 let modalIsOpen = false;
 
-catalogSection.addEventListener("click", (evt) => {
+catalogWrapper.addEventListener("click", (evt) => {
   const catalogName = evt.target.textContent.trim().toLowerCase();
-  if (!modalIsOpen) {
-    fetchItems(catalogName);
+
+  if (evt.target.className === "catalogElement") {
+    if (!modalIsOpen) {
+      cardWrapper.style.display = "flex";
+      fetchItems(catalogName);
+      modalIsOpen = true;
+    }
   }
-  modalIsOpen = true;
 });
 
 closeModal.addEventListener("click", () => {
-  modalIsOpen = false;
-
   if (cardWrapper) {
-    cardWrapper.setAttribute("aria-hidden", "true"); // Set aria-hidden to true
-    const parent = cardWrapper.parentNode;
-    parent.removeChild(cardWrapper);
+    // cardWrapper.setAttribute("aria-hidden", "true"); // Set aria-hidden to true
+
+    cardWrapper.innerHTML = "";
+    cardWrapper.style.display = "none";
+    modalIsOpen = false;
+    if (cardWrapper.parentNode) {
+      cardWrapper.parentNode.removeChild(cardWrapper);
+    }
   }
 });
-
-console.log(modalIsOpen);

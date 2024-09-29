@@ -1,6 +1,6 @@
 {
   "longswords": {
-    "god-tier": [
+    "legendary": [
       {
         "name": "Eldershard, Blade of the Eternal Stars",
         "description": "A longsword infused with the essence of the cosmos, said to cut through the very fabric of reality."
@@ -10,7 +10,7 @@
         "description": "This blade embodies the chill of winter, freezing foes in their tracks."
       }
     ],
-    "heroic": [
+    "rare": [
       {
         "name": "Bloodsong, the Whispering Blade",
         "description": "A blade that sings a haunting melody, instilling fear in the hearts of its enemies."
@@ -20,7 +20,7 @@
         "description": "Forged from the first light of dawn, this sword banishes darkness and evil."
       }
     ],
-    "arcane": [
+    "common": [
       {
         "name": "Stormrend, Blade of Thunder",
         "description": "A sword that crackles with the energy of storms, bringing forth thunder with each strike."
@@ -32,7 +32,7 @@
     ]
   },
   "katanas": {
-    "god-tier": [
+    "legendary": [
       {
         "name": "Sunsunder, Edge of the Celestial Flame",
         "description": "A katana forged from the heart of a dying star, wreathed in everlasting flames."
@@ -42,7 +42,7 @@
         "description": "This katana cuts through both flesh and spirit, seeking the void between worlds."
       }
     ],
-    "heroic": [
+    "rare": [
       {
         "name": "Moonveil, the Lunar Edge",
         "description": "Forged beneath the light of the full moon, this katana is as swift as moonlight itself."
@@ -52,7 +52,7 @@
         "description": "With each swing, the katana slices through air and sound, leaving only silence."
       }
     ],
-    "arcane": [
+    "common": [
       {
         "name": "Soulreaver, the Ghostly Strike",
         "description": "This katana can cleave through souls, leaving its victims lifeless husks."
@@ -60,6 +60,294 @@
       {
         "name": "Shimmerfang, the Ethereal Edge",
         "description": "A blade that flickers between dimensions, making it impossible to predict its movements."
+      }
+    ]
+  },
+  "spears": {
+    "legendary": [
+      {
+        "name": "Skyfall, Spear of the Heavens",
+        "description": "A spear forged from the stars, it strikes with the force of a meteor descending from the sky."
+      },
+      {
+        "name": "Tempestpiercer, Lance of the Storm",
+        "description": "The spearhead crackles with lightning, piercing the storm itself to strike its target."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Sunglaive, Spear of the Radiant Dawn",
+        "description": "This spear channels the first rays of dawn, blinding its enemies with radiant light."
+      },
+      {
+        "name": "Frostspire, Lance of the Northern Winds",
+        "description": "A spear that summons icy gusts with each thrust, freezing enemies solid."
+      }
+    ],
+    "common": [
+      {
+        "name": "Dusklance, Spear of the Fading Sun",
+        "description": "This spear vanishes in twilight, reappearing only when its strike finds its mark."
+      },
+      {
+        "name": "Shadowfang, the Ghostly Pike",
+        "description": "A spectral spear that phases through matter to strike the soul."
+      }
+    ]
+  },
+  "daggers": {
+    "legendary": [
+      {
+        "name": "Nightsbane, Dagger of Eternal Silence",
+        "description": "A dagger that consumes the sound around it, striking with absolute silence."
+      },
+      {
+        "name": "Voidfang, Edge of the Infinite Night",
+        "description": "This dagger cuts through space itself, creating fissures in reality with each slash."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Venomstrike, Blade of the Serpent",
+        "description": "A dagger tipped with deadly venom that poisons the very soul of its victims."
+      },
+      {
+        "name": "Quickstrike, the Flashing Blade",
+        "description": "Faster than the eye can see, this dagger strikes with lightning speed."
+      }
+    ],
+    "common": [
+      {
+        "name": "Gloomshade, the Phantom Edge",
+        "description": "This dagger fades in and out of visibility, making it difficult to detect or block."
+      },
+      {
+        "name": "Spellrend, the common Stiletto",
+        "description": "A dagger that disrupts magic with a mere touch, unraveling spells and enchantments."
+      }
+    ]
+  },
+  "shields": {
+    "legendary": [
+      {
+        "name": "Aegis of Eternity",
+        "description": "A shield that protects its bearer with an impenetrable barrier of time itself."
+      },
+      {
+        "name": "Skyguard, the Heaven's Bulwark",
+        "description": "A shield that calls upon the skies to form an unbreakable wall of wind and lightning."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Sunshield, Protector of the Radiant",
+        "description": "A shield that shines with the light of the sun, blinding attackers."
+      },
+      {
+        "name": "Ironclad, the Unbreakable Bastion",
+        "description": "A shield of solid iron, known for its incredible resilience against all forces."
+      }
+    ],
+    "common": [
+      {
+        "name": "Wardbreaker, the Spell-Shattering Aegis",
+        "description": "This shield nullifies magic, turning spells into harmless mist."
+      },
+      {
+        "name": "Veilguard, the Shimmering Wall",
+        "description": "A shield that flickers between dimensions, deflecting both physical and magical attacks."
+      }
+    ]
+  },
+  "bows": {
+    "legendary": [
+      {
+        "name": "Starshot, Bow of the Celestial Hunt",
+        "description": "A bow that shoots arrows forged from stardust, capable of striking targets across vast distances."
+      },
+      {
+        "name": "Tempeststring, Bow of the Raging Storm",
+        "description": "This bow conjures arrows of lightning, striking down enemies with thunderous wrath."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Dawnseeker, Bow of the First Light",
+        "description": "A bow that fires arrows infused with the light of dawn, piercing even the thickest darkness."
+      },
+      {
+        "name": "Frostfeather, the Icy Flight",
+        "description": "This bow launches arrows that freeze the air as they fly, chilling enemies to the bone."
+      }
+    ],
+    "common": [
+      {
+        "name": "Gloomstring, Bow of the Shadowed Realm",
+        "description": "A bow that draws its power from the shadows, striking from unseen angles."
+      },
+      {
+        "name": "Ethershot, Bow of the Hidden Planes",
+        "description": "This bow fires arrows that pass through dimensions, striking targets from impossible distances."
+      }
+    ]
+  },
+  "helmets": {
+    "legendary": [
+      {
+        "name": "Crown of Eternity",
+        "description": "A helmet forged from celestial metals, granting its wearer immortality in battle."
+      },
+      {
+        "name": "Helm of the Abyssal Gaze",
+        "description": "This helmet allows its wearer to peer into the void, revealing the secrets of eternity."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Skywatcher, Helm of the Heavens",
+        "description": "A helmet that enhances the wearer's vision, granting the ability to see across great distances."
+      },
+      {
+        "name": "Stormcaller's Visage",
+        "description": "This helm crackles with storm energy, shielding the wearer from lightning and thunderous blasts."
+      }
+    ],
+    "common": [
+      {
+        "name": "Veil of the Phantom King",
+        "description": "A spectral helmet that allows the wearer to phase between the material and spirit realms."
+      },
+      {
+        "name": "Spellward, Mask of the common Defender",
+        "description": "A helmet that absorbs magical energy, protecting the wearer from spells."
+      }
+    ]
+  },
+  "pauldrons": {
+    "legendary": [
+      {
+        "name": "Shoulders of the Colossus",
+        "description": "Pauldrons forged from the bones of ancient titans, enhancing the wearer's strength immeasurably."
+      },
+      {
+        "name": "Skybreaker, Mantle of the Stormlord",
+        "description": "These pauldrons harness the power of thunderstorms, striking nearby enemies with lightning."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Dawnshroud, Pauldrons of the Morning Star",
+        "description": "Glowing with the light of dawn, these pauldrons protect the wearer from dark magic."
+      },
+      {
+        "name": "Ironwrath, the Unyielding Shoulders",
+        "description": "These heavily fortified pauldrons grant unmatched defense against all forms of physical assault."
+      }
+    ],
+    "common": [
+      {
+        "name": "Wraithguard, Spectral Pauldrons",
+        "description": "Pauldrons that flicker with ghostly energy, granting the wearer the ability to walk among spirits."
+      },
+      {
+        "name": "Mysticbinders, common Mantle",
+        "description": "Pauldrons that store latent magic, empowering the wearer with bursts of common energy."
+      }
+    ]
+  },
+  "chest_armor": {
+    "legendary": [
+      {
+        "name": "Heartforge, Breastplate of the Eternal Flame",
+        "description": "A chestplate that burns with an everlasting flame, warding off any attacks and regenerating the wearer."
+      },
+      {
+        "name": "Voidplate, Armor of the Infinite Dark",
+        "description": "This chest armor absorbs the essence of the void, making the wearer invulnerable to dark and void magic."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Ironheart, Plate of the Unshaken",
+        "description": "A solid plate that grants its wearer steadfast courage, boosting their resistance to fear and magic."
+      },
+      {
+        "name": "Frostguard, the Frozen Bastion",
+        "description": "A chestplate covered in eternal ice, freezing any weapon that strikes it."
+      }
+    ],
+    "common": [
+      {
+        "name": "Spellweaver's Cuirass",
+        "description": "This chest armor is imbued with magical threads, boosting the wearer's spellcasting abilities."
+      },
+      {
+        "name": "Shadowsilk Vestment",
+        "description": "A lightweight but powerful chest armor that blends with the shadows, making the wearer nearly invisible."
+      }
+    ]
+  },
+  "gauntlets": {
+    "legendary": [
+      {
+        "name": "Fist of the Titans",
+        "description": "Gauntlets forged in the crucible of giants, granting immense physical strength and power."
+      },
+      {
+        "name": "Voidclaw, Gauntlets of the Nether",
+        "description": "These gauntlets tear through reality, allowing the wearer to strike through dimensions."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Ironfist, Gauntlets of the Vanguard",
+        "description": "Heavily reinforced gauntlets that enhance the wearer's ability to block and parry attacks."
+      },
+      {
+        "name": "Frostbite Grips",
+        "description": "Gauntlets that emanate intense cold, freezing enemies upon contact."
+      }
+    ],
+    "common": [
+      {
+        "name": "Manaforged Gauntlets",
+        "description": "Gauntlets that channel magical energy, increasing the potency of spells cast by the wearer."
+      },
+      {
+        "name": "Spectralbind Gloves",
+        "description": "These gloves are woven from ethereal strands, allowing the wearer to interact with spirits and otherworldly entities."
+      }
+    ]
+  },
+  "leg_armor": {
+    "legendary": [
+      {
+        "name": "Treads of the Celestial Walker",
+        "description": "Leg armor that allows the wearer to walk between worlds, stepping into other dimensions at will."
+      },
+      {
+        "name": "Stormstride, Greaves of the Thunderlord",
+        "description": "These greaves harness the power of storms, allowing the wearer to move with the speed of lightning."
+      }
+    ],
+    "rare": [
+      {
+        "name": "Ironmarch Greaves",
+        "description": "Sturdy greaves that increase the wearer's stamina and endurance in battle."
+      },
+      {
+        "name": "Snowstep, Boots of the Frost Warden",
+        "description": "Leg armor that allows the wearer to walk on snow and ice without leaving a trace."
+      }
+    ],
+    "common": [
+      {
+        "name": "Voidwalker Boots",
+        "description": "These boots enable the wearer to step through shadows, traversing distances in the blink of an eye."
+      },
+      {
+        "name": "Spellstride, Greaves of the Arcanist",
+        "description": "Leg armor enchanted to boost agility and speed while amplifying the wearer’s magical abilities."
       }
     ]
   }
