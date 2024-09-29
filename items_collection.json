@@ -30,5 +30,37 @@
         "description": "A blade that blends into the shadows, it strikes without warning."
       }
     ]
+  },
+  "katanas": {
+    "god-tier": [
+      {
+        "name": "Sunsunder, Edge of the Celestial Flame",
+        "description": "A katana forged from the heart of a dying star, wreathed in everlasting flames."
+      },
+      {
+        "name": "Voidseeker, Blade of the Abyss",
+        "description": "This katana cuts through both flesh and spirit, seeking the void between worlds."
+      }
+    ],
+    "heroic": [
+      {
+        "name": "Moonveil, the Lunar Edge",
+        "description": "Forged beneath the light of the full moon, this katana is as swift as moonlight itself."
+      },
+      {
+        "name": "Windcutter, Blade of the Tempest",
+        "description": "With each swing, the katana slices through air and sound, leaving only silence."
+      }
+    ],
+    "arcane": [
+      {
+        "name": "Soulreaver, the Ghostly Strike",
+        "description": "This katana can cleave through souls, leaving its victims lifeless husks."
+      },
+      {
+        "name": "Shimmerfang, the Ethereal Edge",
+        "description": "A blade that flickers between dimensions, making it impossible to predict its movements."
+      }
+    ]
   }
 }

@@ -115,31 +115,7 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   font-size: 40px;
-}
-
-/* ////////////////////////////////////////////////////////////////////
- ////////////////////  AboutUsSection  /////////////////////////////////
- //////////////////////////////////////////////////////////////////// */
-
-.aboutUsSection {
-  padding: 15px 40px 15px;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.aboutUsSection div {
-  padding: 15px;
-  padding-left: 30px;
-}
-
-.aboutUsSection h2 {
-  font-size: 60px;
-  text-decoration: underline;
-}
-
-.aboutUsSection p {
-  font-size: 30px;
-  margin-top: 15px;
+  cursor: pointer;
 }
 
 /* ////////////////////////////////////////////////////////////////////
@@ -159,6 +135,28 @@ html {
   height: 100%;
   background: rgba(44, 40, 40, 0.9);
   z-index: 9999;
+}
+
+.closeModalWrapper {
+  display: flex;
+  justify-content: right;
+}
+
+.closeModalWrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.closeModalWrapper div:hover {
+  background-color: rgba(62, 54, 54, 0.9);
+  border-radius: 100%;
 }
 
 .cardModal {
@@ -190,7 +188,15 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.cardModal p {
   font-size: 1.2rem;
+}
+
+.cardModal ul:last-child {
+  margin: 0;
 }
 
 .cardModal button {
