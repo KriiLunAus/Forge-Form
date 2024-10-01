@@ -47,15 +47,20 @@ function renderItems(data, catalogName) {
 
     for (const arnament of arnaments) {
       const listElement = document.createElement("li");
-      const nameOfArnament = document.createElement("p");
+      const detailsElement = document.createElement("details");
+      const summaryElement = document.createElement("summary");
       const addToCartBtn = document.createElement("button");
 
       tierHeader.textContent =
         category.charAt(0).toUpperCase() + category.slice(1);
-      nameOfArnament.textContent = arnament.name;
+      summaryElement.textContent = arnament.name;
+      summaryElement.className = "summaryElement";
+      detailsElement.className = "detailsElement";
+      detailsElement.textContent = arnament.description;
       addToCartBtn.textContent = "Add to cart";
 
-      listElement.appendChild(nameOfArnament);
+      detailsElement.appendChild(summaryElement);
+      listElement.appendChild(detailsElement);
       listElement.appendChild(addToCartBtn);
 
       listOfTiers.appendChild(listElement);
@@ -68,7 +73,10 @@ function renderItems(data, catalogName) {
 let modalIsOpen = false;
 
 catalogWrapper.addEventListener("click", (evt) => {
-  const catalogName = evt.target.textContent.trim().toLowerCase();
+  const catalogName = evt.target.textContent
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "_");
 
   if (evt.target.className === "catalogElement") {
     if (!modalIsOpen) {

@@ -1,6 +1,1 @@
-- Переробити списки в модалці за <details> і <summary>
-
-<details>
-<summary> Name </summary>
-    description
-</details>
+Зробити cart сторінку
