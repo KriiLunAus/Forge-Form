@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #e0dede;
+  max-width: 1440px;
+  font-size: 17px;
+  box-sizing: border-box;
+  font-family: "MedievalSharp";
+}
+
+html {
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/sparksBackground.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////
+ ////////////////////  HeaderSection  /////////////////////////////////
+ //////////////////////////////////////////////////////////////////// */
+
+.headerSection {
+  padding: 20px 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: rgb(44, 40, 40);
+}
+
+.headerSection a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* ////////////////////////////////////////////////////////////////////
+ ////////////////////  listOfItmInCartSection  /////////////////////////////////
+ //////////////////////////////////////////////////////////////////// */
+
+.listOfItmInCartSection ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  list-style-type: armenian;
+
+  padding: 50px;
+  margin-left: 350px;
+}
+
+.listOfItmInCartSection p {
+  font-size: 60px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+.listOfItmInCartSection ul li:nth-child(odd) {
+  align-self: end;
+}
+
+.listOfItmInCartSection ul li {
+  width: 700px;
+  padding: 5px 0px 15px 5px;
+
+  font-size: 40px;
+  background-color: rgb(44, 40, 40);
+  border-radius: 5px;
+}
+
+/* ////////////////////////////////////////////////////////////////////
+ ////////////////////  makeOrderSection  /////////////////////////////////
+ //////////////////////////////////////////////////////////////////// */
+
+.makeOrderSection {
+  padding-block: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.makeOrderSection div {
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  font-size: 60px;
+  cursor: pointer;
+}

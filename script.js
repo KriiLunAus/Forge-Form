@@ -72,6 +72,8 @@ function renderItems(data, catalogName) {
 
 let modalIsOpen = false;
 
+//open modal
+
 catalogWrapper.addEventListener("click", (evt) => {
   const catalogName = evt.target.textContent
     .trim()
@@ -87,6 +89,8 @@ catalogWrapper.addEventListener("click", (evt) => {
   }
 });
 
+//closing modal
+
 closeModal.addEventListener("click", () => {
   if (cardWrapper) {
     // cardWrapper.setAttribute("aria-hidden", "true"); // Set aria-hidden to true
@@ -98,4 +102,29 @@ closeModal.addEventListener("click", () => {
       cardWrapper.parentNode.removeChild(cardWrapper);
     }
   }
+});
+
+//displaying items in cart
+
+const arrOfCartItms = [];
+const listOfItmInCart = document.getElementById("listOfItmInCart");
+
+document.addEventListener("click", (evt) => {
+  if (
+    evt.target.tagName === "BUTTON" &&
+    evt.target.textContent === "Add to cart"
+  ) {
+    const itemName =
+      evt.target.parentElement.querySelector("summary").textContent;
+    arrOfCartItms.push(itemName);
+  }
+});
+
+listOfItmInCart.forEach((element) => {
+  const elementOfCartList = document.createElement("li");
+  const deleteFromCartBtn = document.createElement("button");
+
+  elementOfCartList.textContent = element;
+
+  listOfItmInCart.appendChild(elementOfCartList);
 });
