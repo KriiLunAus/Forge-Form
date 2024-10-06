@@ -73,22 +73,22 @@ function renderItems(data, catalogName) {
 let modalIsOpen = false;
 
 //open modal
+if (catalogWrapper) {
+  catalogWrapper.addEventListener("click", (evt) => {
+    const catalogName = evt.target.textContent
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, "_");
 
-catalogWrapper.addEventListener("click", (evt) => {
-  const catalogName = evt.target.textContent
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "_");
-
-  if (evt.target.className === "catalogElement") {
-    if (!modalIsOpen) {
-      cardWrapper.style.display = "flex";
-      fetchItems(catalogName);
-      modalIsOpen = true;
+    if (evt.target.className === "catalogElement") {
+      if (!modalIsOpen) {
+        cardWrapper.style.display = "flex";
+        fetchItems(catalogName);
+        modalIsOpen = true;
+      }
     }
-  }
-});
-
+  });
+}
 //closing modal
 
 closeModal.addEventListener("click", () => {
@@ -105,9 +105,7 @@ closeModal.addEventListener("click", () => {
 });
 
 //displaying items in cart
-
-const arrOfCartItms = [];
-const listOfItmInCart = document.getElementById("listOfItmInCart");
+let arrOfCartItems = [];
 
 document.addEventListener("click", (evt) => {
   if (
@@ -116,15 +114,7 @@ document.addEventListener("click", (evt) => {
   ) {
     const itemName =
       evt.target.parentElement.querySelector("summary").textContent;
-    arrOfCartItms.push(itemName);
+    arrOfCartItems.push(itemName);
+    localStorage.setItem("itemsInCart", JSON.stringify(arrOfCartItems));
   }
-});
-
-listOfItmInCart.forEach((element) => {
-  const elementOfCartList = document.createElement("li");
-  const deleteFromCartBtn = document.createElement("button");
-
-  elementOfCartList.textContent = element;
-
-  listOfItmInCart.appendChild(elementOfCartList);
 });
