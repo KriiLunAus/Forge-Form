@@ -3,7 +3,6 @@
   padding: 0;
   color: #e0dede;
   max-width: 1440px;
-  font-size: 17px;
   box-sizing: border-box;
   font-family: "MedievalSharp";
 }
@@ -40,7 +39,9 @@ html {
 /* ////////////////////////////////////////////////////////////////////
  ////////////////////  listOfItmInCartSection  /////////////////////////////////
  //////////////////////////////////////////////////////////////////// */
-
+.listOfItmInCartSection {
+  font-size: 40px;
+}
 .listOfItmInCartSection ul {
   display: flex;
   flex-direction: column;
@@ -70,7 +71,6 @@ html {
   width: 700px;
   padding: 15px 0px 15px 5px;
 
-  font-size: 40px;
   background-color: rgb(44, 40, 40);
   border-radius: 5px;
 }
@@ -98,7 +98,7 @@ html {
  //////////////////////////////////////////////////////////////////// */
 
 .makeOrderSection {
-  padding-block: 100px;
+  padding-block: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
