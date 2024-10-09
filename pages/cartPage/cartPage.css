@@ -31,6 +31,22 @@ html {
   background-color: rgb(44, 40, 40);
 }
 
+.headerSection:after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(44, 40, 40, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.heroSection:after {
+}
 .headerSection a {
   text-decoration: none;
   font-size: 30px;
@@ -113,4 +129,15 @@ html {
 
   font-size: 60px;
   cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////
+ //////////////////// Code for Mobile /////////////////////////////////
+ //////////////////////////////////////////////////////////////////// */
+
+@media screen and (min-width: 320px) {
+  /* Header */
+  .headerSection {
+    padding: 10px 20px;
+  }
 }
