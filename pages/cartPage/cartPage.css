@@ -21,7 +21,8 @@ html {
  //////////////////////////////////////////////////////////////////// */
 
 .headerSection {
-  padding: 20px 40px 20px;
+  padding: 10px 20px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,62 +30,54 @@ html {
   margin-right: auto;
   margin-bottom: 50px;
   background-color: rgb(44, 40, 40);
-}
 
-.headerSection:after {
-  content: "";
-  position: absolute;
-  top: 45px;
-  max-width: 1440px;
-  left: 0;
-  right: 0;
-  height: 50px;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(44, 40, 40, 1),
-    rgba(255, 255, 255, 0)
-  );
+  box-shadow: 0 30px 40px -5px rgba(44, 40, 40, 1),
+    0 30px 40px -5px rgba(255, 255, 255, 0);
 }
 
 .headerSection a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .headerSection {
+    padding: 20px 40px 20px;
+  }
+
+  .headerSection a {
+    font-size: 30px;
+  }
 }
 
 /* ////////////////////////////////////////////////////////////////////
  ////////////////////  listOfItmInCartSection  /////////////////////////////////
  //////////////////////////////////////////////////////////////////// */
 .listOfItmInCartSection {
-  font-size: 40px;
+  font-size: 20px;
 }
 .listOfItmInCartSection ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 10px;
 
-  list-style-type: armenian;
-
-  padding: 50px;
-  margin-left: 350px;
+  padding: 10px;
 }
 
 .listOfItmInCartSection p {
-  font-size: 60px;
+  font-size: 30px;
   text-align: left;
   margin-left: 100px;
-}
-
-.listOfItmInCartSection ul li:nth-child(odd) {
-  align-self: end;
 }
 
 .listOfItmInCartSection ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 700px;
-  padding: 15px 0px 15px 5px;
+  width: calc(100% - 20px);
+  padding: 10px 0px 10px 10px;
 
   background-color: rgb(44, 40, 40);
   border-radius: 5px;
@@ -98,7 +91,7 @@ html {
   margin-top: 5px;
   width: 50px;
   height: 50px;
-  margin-right: 15px;
+  margin-right: 10px;
   font-size: 50px;
   cursor: pointer;
 }
@@ -106,6 +99,37 @@ html {
 .removeBtnWrapper div:hover {
   background-color: rgba(62, 54, 54, 0.9);
   border-radius: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .listOfItmInCartSection {
+    font-size: 40px;
+  }
+  .listOfItmInCartSection ul {
+    padding: 50px;
+  }
+
+  .listOfItmInCartSection p {
+    font-size: 60px;
+  }
+
+  .listOfItmInCartSection ul li {
+    width: 700px;
+    padding: 15px 0px 15px 5px;
+  }
+
+  .removeBtnWrapper div {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .listOfItmInCartSection ul {
+    margin-left: 350px;
+  }
+  .listOfItmInCartSection ul li:nth-child(odd) {
+    align-self: end;
+  }
 }
 
 /* ////////////////////////////////////////////////////////////////////
@@ -120,14 +144,30 @@ html {
 }
 
 .makeOrderSection div {
-  width: fit-content;
-
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  justify-content: center;
 
-  font-size: 60px;
+  font-size: 30px;
   cursor: pointer;
+}
+.orderAnvil {
+  pointer-events: none;
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .makeOrderSection div {
+    font-size: 60px;
+  }
+  .orderAnvil {
+    margin-inline: auto;
+
+    width: 200px;
+    height: 200px;
+  }
 }
 
 /* ////////////////////////////////////////////////////////////////////
