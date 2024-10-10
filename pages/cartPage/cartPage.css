@@ -35,6 +35,7 @@ html {
   content: "";
   position: absolute;
   top: 45px;
+  max-width: 1440px;
   left: 0;
   right: 0;
   height: 50px;
@@ -45,8 +46,6 @@ html {
   );
 }
 
-.heroSection:after {
-}
 .headerSection a {
   text-decoration: none;
   font-size: 30px;
