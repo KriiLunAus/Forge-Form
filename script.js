@@ -17,18 +17,17 @@ const catalogSection = document.getElementById("catalogSection");
 const catalogWrapper = document.getElementById("catalogWrapper");
 const closeModal = document.createElement("div");
 const cardWrapper = document.createElement("div");
+const modal = document.createElement("div");
 
 function renderItems(data, catalogName) {
+  modal.innerHTML = "";
+
   const closeModalWrapper = document.createElement("div");
-  const modal = document.createElement("div");
 
   closeModal.innerHTML = "\u00D7";
   closeModalWrapper.className = "closeModalWrapper";
   cardWrapper.className = "cardModalWrapper";
   modal.className = "cardModal";
-
-  // modal.setAttribute("aria-hidden", "false"); // Modal is visible
-  // cardWrapper.setAttribute("role", "dialog"); // Indicate it's a dialog
 
   closeModalWrapper.appendChild(closeModal);
   modal.appendChild(closeModalWrapper);
@@ -85,16 +84,33 @@ if (catalogWrapper) {
         cardWrapper.style.display = "flex";
         fetchItems(catalogName);
         modalIsOpen = true;
+
+        document.addEventListener("keydown", hendleKeydown); //exit modal on esc
       }
     }
   });
 }
-//closing modal
+
+//exit modal where click !== modal
+
+cardWrapper.addEventListener("click", (evt) => {
+  if (evt.target === cardWrapper) {
+    closeModalFunction();
+    document.removeEventListener("keydown", hendleKeydown);
+  }
+});
+
+//exit modal where click on "button"
 
 closeModal.addEventListener("click", () => {
   if (cardWrapper) {
-    // cardWrapper.setAttribute("aria-hidden", "true"); // Set aria-hidden to true
+    closeModalFunction();
+    document.removeEventListener("keydown", hendleKeydown);
+  }
+});
 
+function closeModalFunction() {
+  if (cardWrapper) {
     cardWrapper.innerHTML = "";
     cardWrapper.style.display = "none";
     modalIsOpen = false;
@@ -102,7 +118,13 @@ closeModal.addEventListener("click", () => {
       cardWrapper.parentNode.removeChild(cardWrapper);
     }
   }
-});
+}
+
+function hendleKeydown(evt) {
+  if (evt.key === "Escape") {
+    closeModalFunction();
+  }
+}
 
 //displaying items in cart
 let arrOfCartItems = [];
