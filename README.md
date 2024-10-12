@@ -60,7 +60,7 @@ Forge & Form/
     
     ```bash
     bash
-    Copy code
+    
     git clone https://github.com/your-repo/forge-form.git
     
     ```
@@ -69,7 +69,7 @@ Forge & Form/
     
     ```bash
     bash
-    Copy code
+    
     cd forge-form
     
     ```
@@ -99,7 +99,6 @@ Double-click the `index.html` file or serve it using a local server like `live-s
 - **HTML**: Structure and content of the application.
 - **CSS**: Styling of the application, including layout, fonts, and responsiveness.
 - **JavaScript**: Implements the interactive features such as modal handling, adding/removing items from the cart, and managing localStorage.
-- **Google Fonts**: The application uses the **MedievalSharp** font for a thematic feel.
 - **SVG Icons**: Various weapon and armor icons are displayed using SVG files for clarity and scalability.
 - **localStorage**: Used to save the user's cart items between sessions.
 
@@ -107,7 +106,6 @@ Double-click the `index.html` file or serve it using a local server like `live-s
 
 ## Future Improvements
 
-- **Checkout Process**: Add functionality to complete the purchase (currently commented out in the `orderModal.js` file).
 - **Responsive Design**: Improve mobile responsiveness for a better user experience on smaller screens.
 - **Search and Filtering**: Add search and filter functionality to make it easier to find specific items in the catalog.
 - **Enhanced Item Details**: Add more details to each item (e.g., price, materials, stats) in the modal pop-up.
@@ -122,6 +120,6 @@ This project is open-source. Feel free to contribute or use it for your own purp
 
 ## Author
 
-Created by [Your Name].
+Created by KriiLunAus.
 
-For questions or contributions, please reach out at [Your Contact Information].
+For questions or contributions, please reach out at bosik.dmutro@gmail.com.
