@@ -81,7 +81,7 @@ Double-click the `index.html` file or serve it using a local server like `live-s
 
 ## Usage
 
-1. **Home Page:**
+1.  **Home Page:**
     - Browse the categories of weapons and armor on the main page.
     - Clicking on any category (e.g., "Longswords") will display the items in that category in a modal.
     - Add items to your cart using the "Add to cart" button in the modal.

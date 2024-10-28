@@ -1,7 +1,7 @@
 //itemsColection fetch
 async function fetchItems(catalogName) {
   try {
-    const response = await fetch("./json/items_collection.json");
+    const response = await fetch("./data/items_collection.json");
     if (!response.ok) {
       throw new Error("Something went wrong!");
     }
