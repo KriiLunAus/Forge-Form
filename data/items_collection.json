@@ -3,31 +3,37 @@
     "legendary": [
       {
         "name": "Eldershard, Blade of the Eternal Stars",
-        "description": "A longsword infused with the essence of the cosmos, said to cut through the very fabric of reality."
+        "description": "A longsword infused with the essence of the cosmos, said to cut through the very fabric of reality.",
+        "price": 5000
       },
       {
         "name": "Frostfang, Sword of the Eternal Winter",
-        "description": "This blade embodies the chill of winter, freezing foes in their tracks."
+        "description": "This blade embodies the chill of winter, freezing foes in their tracks.",
+        "price": 4800
       }
     ],
     "rare": [
       {
         "name": "Bloodsong, the Whispering Blade",
-        "description": "A blade that sings a haunting melody, instilling fear in the hearts of its enemies."
+        "description": "A blade that sings a haunting melody, instilling fear in the hearts of its enemies.",
+        "price": 2500
       },
       {
         "name": "Dawnbringer, Sword of the First Light",
-        "description": "Forged from the first light of dawn, this sword banishes darkness and evil."
+        "description": "Forged from the first light of dawn, this sword banishes darkness and evil.",
+        "price": 2400
       }
     ],
     "common": [
       {
         "name": "Stormrend, Blade of Thunder",
-        "description": "A sword that crackles with the energy of storms, bringing forth thunder with each strike."
+        "description": "A sword that crackles with the energy of storms, bringing forth thunder with each strike.",
+        "price": 800
       },
       {
         "name": "Nightshade, the Shadowed Edge",
-        "description": "A blade that blends into the shadows, it strikes without warning."
+        "description": "A blade that blends into the shadows, it strikes without warning.",
+        "price": 750
       }
     ]
   },
@@ -35,31 +41,37 @@
     "legendary": [
       {
         "name": "Sunsunder, Edge of the Celestial Flame",
-        "description": "A katana forged from the heart of a dying star, wreathed in everlasting flames."
+        "description": "A katana forged from the heart of a dying star, wreathed in everlasting flames.",
+        "price": 5200
       },
       {
         "name": "Voidseeker, Blade of the Abyss",
-        "description": "This katana cuts through both flesh and spirit, seeking the void between worlds."
+        "description": "This katana cuts through both flesh and spirit, seeking the void between worlds.",
+        "price": 5000
       }
     ],
     "rare": [
       {
         "name": "Moonveil, the Lunar Edge",
-        "description": "Forged beneath the light of the full moon, this katana is as swift as moonlight itself."
+        "description": "Forged beneath the light of the full moon, this katana is as swift as moonlight itself.",
+        "price": 2600
       },
       {
         "name": "Windcutter, Blade of the Tempest",
-        "description": "With each swing, the katana slices through air and sound, leaving only silence."
+        "description": "With each swing, the katana slices through air and sound, leaving only silence.",
+        "price": 2500
       }
     ],
     "common": [
       {
         "name": "Soulreaver, the Ghostly Strike",
-        "description": "This katana can cleave through souls, leaving its victims lifeless husks."
+        "description": "This katana can cleave through souls, leaving its victims lifeless husks.",
+        "price": 900
       },
       {
         "name": "Shimmerfang, the Ethereal Edge",
-        "description": "A blade that flickers between dimensions, making it impossible to predict its movements."
+        "description": "A blade that flickers between dimensions, making it impossible to predict its movements.",
+        "price": 850
       }
     ]
   },
@@ -67,31 +79,37 @@
     "legendary": [
       {
         "name": "Skyfall, Spear of the Heavens",
-        "description": "A spear forged from the stars, it strikes with the force of a meteor descending from the sky."
+        "description": "A spear forged from the stars, it strikes with the force of a meteor descending from the sky.",
+        "price": 5100
       },
       {
         "name": "Tempestpiercer, Lance of the Storm",
-        "description": "The spearhead crackles with lightning, piercing the storm itself to strike its target."
+        "description": "The spearhead crackles with lightning, piercing the storm itself to strike its target.",
+        "price": 5000
       }
     ],
     "rare": [
       {
         "name": "Sunglaive, Spear of the Radiant Dawn",
-        "description": "This spear channels the first rays of dawn, blinding its enemies with radiant light."
+        "description": "This spear channels the first rays of dawn, blinding its enemies with radiant light.",
+        "price": 2700
       },
       {
         "name": "Frostspire, Lance of the Northern Winds",
-        "description": "A spear that summons icy gusts with each thrust, freezing enemies solid."
+        "description": "A spear that summons icy gusts with each thrust, freezing enemies solid.",
+        "price": 2600
       }
     ],
     "common": [
       {
         "name": "Dusklance, Spear of the Fading Sun",
-        "description": "This spear vanishes in twilight, reappearing only when its strike finds its mark."
+        "description": "This spear vanishes in twilight, reappearing only when its strike finds its mark.",
+        "price": 850
       },
       {
         "name": "Shadowfang, the Ghostly Pike",
-        "description": "A spectral spear that phases through matter to strike the soul."
+        "description": "A spectral spear that phases through matter to strike the soul.",
+        "price": 800
       }
     ]
   },
@@ -99,63 +117,37 @@
     "legendary": [
       {
         "name": "Nightsbane, Dagger of Eternal Silence",
-        "description": "A dagger that consumes the sound around it, striking with absolute silence."
+        "description": "A dagger that consumes the sound around it, striking with absolute silence.",
+        "price": 4800
       },
       {
         "name": "Voidfang, Edge of the Infinite Night",
-        "description": "This dagger cuts through space itself, creating fissures in reality with each slash."
+        "description": "This dagger cuts through space itself, creating fissures in reality with each slash.",
+        "price": 4700
       }
     ],
     "rare": [
       {
         "name": "Venomstrike, Blade of the Serpent",
-        "description": "A dagger tipped with deadly venom that poisons the very soul of its victims."
+        "description": "A dagger tipped with deadly venom that poisons the very soul of its victims.",
+        "price": 2200
       },
       {
         "name": "Quickstrike, the Flashing Blade",
-        "description": "Faster than the eye can see, this dagger strikes with lightning speed."
+        "description": "Faster than the eye can see, this dagger strikes with lightning speed.",
+        "price": 2100
       }
     ],
     "common": [
       {
         "name": "Gloomshade, the Phantom Edge",
-        "description": "This dagger fades in and out of visibility, making it difficult to detect or block."
+        "description": "This dagger fades in and out of visibility, making it difficult to detect or block.",
+        "price": 700
       },
       {
         "name": "Spellrend, the common Stiletto",
-        "description": "A dagger that disrupts magic with a mere touch, unraveling spells and enchantments."
-      }
-    ]
-  },
-  "shields": {
-    "legendary": [
-      {
-        "name": "Aegis of Eternity",
-        "description": "A shield that protects its bearer with an impenetrable barrier of time itself."
-      },
-      {
-        "name": "Skyguard, the Heaven's Bulwark",
-        "description": "A shield that calls upon the skies to form an unbreakable wall of wind and lightning."
-      }
-    ],
-    "rare": [
-      {
-        "name": "Sunshield, Protector of the Radiant",
-        "description": "A shield that shines with the light of the sun, blinding attackers."
-      },
-      {
-        "name": "Ironclad, the Unbreakable Bastion",
-        "description": "A shield of solid iron, known for its incredible resilience against all forces."
-      }
-    ],
-    "common": [
-      {
-        "name": "Wardbreaker, the Spell-Shattering Aegis",
-        "description": "This shield nullifies magic, turning spells into harmless mist."
-      },
-      {
-        "name": "Veilguard, the Shimmering Wall",
-        "description": "A shield that flickers between dimensions, deflecting both physical and magical attacks."
+        "description": "A dagger that disrupts magic with a mere touch, unraveling spells and enchantments.",
+        "price": 650
       }
     ]
   },
@@ -163,63 +155,227 @@
     "legendary": [
       {
         "name": "Starshot, Bow of the Celestial Hunt",
-        "description": "A bow that shoots arrows forged from stardust, capable of striking targets across vast distances."
+        "description": "A bow that shoots arrows forged from stardust, capable of striking targets across vast distances.",
+        "price": 4900
       },
       {
         "name": "Tempeststring, Bow of the Raging Storm",
-        "description": "This bow conjures arrows of lightning, striking down enemies with thunderous wrath."
+        "description": "This bow conjures arrows of lightning, striking down enemies with thunderous wrath.",
+        "price": 4800
       }
     ],
     "rare": [
       {
         "name": "Dawnseeker, Bow of the First Light",
-        "description": "A bow that fires arrows infused with the light of dawn, piercing even the thickest darkness."
+        "description": "A bow that fires arrows infused with the light of dawn, piercing even the thickest darkness.",
+        "price": 2300
       },
       {
         "name": "Frostfeather, the Icy Flight",
-        "description": "This bow launches arrows that freeze the air as they fly, chilling enemies to the bone."
+        "description": "This bow launches arrows that freeze the air as they fly, chilling enemies to the bone.",
+        "price": 2200
       }
     ],
     "common": [
       {
         "name": "Gloomstring, Bow of the Shadowed Realm",
-        "description": "A bow that draws its power from the shadows, striking from unseen angles."
+        "description": "A bow that draws its power from the shadows, striking from unseen angles.",
+        "price": 750
       },
       {
         "name": "Ethershot, Bow of the Hidden Planes",
-        "description": "This bow fires arrows that pass through dimensions, striking targets from impossible distances."
+        "description": "This bow fires arrows that pass through dimensions, striking targets from impossible distances.",
+        "price": 700
       }
     ]
   },
   "helmets": {
     "legendary": [
       {
-        "name": "Crown of Eternity",
-        "description": "A helmet forged from celestial metals, granting its wearer immortality in battle."
+        "name": "Crown of Eternal Flames",
+        "description": "A helmet wreathed in unending fire, granting immunity to fire-based attacks.",
+        "price": 4500
       },
       {
-        "name": "Helm of the Abyssal Gaze",
-        "description": "This helmet allows its wearer to peer into the void, revealing the secrets of eternity."
+        "name": "Helm of the Infinite Void",
+        "description": "A helmet that warps perception, making the wearer difficult to target.",
+        "price": 4400
       }
     ],
     "rare": [
       {
-        "name": "Skywatcher, Helm of the Heavens",
-        "description": "A helmet that enhances the wearer's vision, granting the ability to see across great distances."
+        "name": "Shadowveil Helm",
+        "description": "A helm that blends the wearer into shadows, making them harder to detect.",
+        "price": 2200
       },
       {
-        "name": "Stormcaller's Visage",
-        "description": "This helm crackles with storm energy, shielding the wearer from lightning and thunderous blasts."
+        "name": "Dawnlight Visor",
+        "description": "This helmet reflects the light of dawn, blinding enemies when struck by sunlight.",
+        "price": 2100
       }
     ],
     "common": [
       {
-        "name": "Veil of the Phantom King",
-        "description": "A spectral helmet that allows the wearer to phase between the material and spirit realms."
+        "name": "Ironforge Helm",
+        "description": "A sturdy iron helmet that provides basic protection for any warrior.",
+        "price": 700
       },
       {
-        "name": "Spellward, Mask of the common Defender",
-        "description": "A helmet that absorbs magical energy, protecting the wearer from spells."
+        "name": "Steelshade Protector",
+        "description": "A simple steel helmet offering excellent defense against blunt force.",
+        "price": 650
+      }
+    ]
+  },
+  "chest_armor": {
+    "legendary": [
+      {
+        "name": "Aegis of the Eternal Guardian",
+        "description": "A chestplate imbued with the essence of a guardian spirit, shielding the wearer from harm.",
+        "price": 6000
+      },
+      {
+        "name": "Infernal Carapace",
+        "description": "Forged from demon scales, this armor radiates an intimidating aura of heat.",
+        "price": 5800
+      }
+    ],
+    "rare": [
+      {
+        "name": "Frostwarden Breastplate",
+        "description": "This armor emits a chilling aura, reducing the speed of enemies around the wearer.",
+        "price": 3200
+      },
+      {
+        "name": "Stormforged Chestguard",
+        "description": "Crafted during a lightning storm, it resists electricity and grants enhanced agility.",
+        "price": 3100
+      }
+    ],
+    "common": [
+      {
+        "name": "Steelheart Chestplate",
+        "description": "A durable chestplate that provides ample protection against physical attacks.",
+        "price": 1000
+      },
+      {
+        "name": "Ironhide Armor",
+        "description": "A basic but effective chestplate made from reinforced iron.",
+        "price": 950
+      }
+    ]
+  },
+  "gauntlets": {
+    "legendary": [
+      {
+        "name": "Fists of the Thunderlord",
+        "description": "Gauntlets crackling with lightning, enhancing the strength of the wearer.",
+        "price": 4000
+      },
+      {
+        "name": "Voidgrip Gauntlets",
+        "description": "These gauntlets allow the wearer to manipulate objects from afar using void energy.",
+        "price": 3900
+      }
+    ],
+    "rare": [
+      {
+        "name": "Emberclasp Gloves",
+        "description": "Gauntlets that radiate intense heat, scorching anything they touch.",
+        "price": 2000
+      },
+      {
+        "name": "Silverfang Grips",
+        "description": "Lightweight gauntlets that enhance dexterity and precision.",
+        "price": 1900
+      }
+    ],
+    "common": [
+      {
+        "name": "Bronzeplate Gauntlets",
+        "description": "Sturdy gauntlets that provide reliable hand protection.",
+        "price": 600
+      },
+      {
+        "name": "Ironclad Gloves",
+        "description": "Simple yet effective, these gloves are perfect for basic combat.",
+        "price": 550
+      }
+    ]
+  },
+  "leg_armor": {
+    "legendary": [
+      {
+        "name": "Starlight Greaves",
+        "description": "Greaves that make the wearer light as a feather, enhancing speed and agility.",
+        "price": 4200
+      },
+      {
+        "name": "Earthshatter Legguards",
+        "description": "These greaves make each step feel like an earthquake, stunning nearby foes.",
+        "price": 4100
+      }
+    ],
+    "rare": [
+      {
+        "name": "Frostbound Greaves",
+        "description": "Leg armor that freezes the ground beneath the wearer, slowing pursuers.",
+        "price": 2100
+      },
+      {
+        "name": "Sunlit Sabatons",
+        "description": "Greaves that glow with the light of the sun, enhancing endurance.",
+        "price": 2000
+      }
+    ],
+    "common": [
+      {
+        "name": "Ironstride Greaves",
+        "description": "Reinforced greaves that provide excellent protection for the legs.",
+        "price": 700
+      },
+      {
+        "name": "Steelstep Guards",
+        "description": "Heavy greaves offering strong defense and stable footing.",
+        "price": 650
+      }
+    ]
+  },
+  "shields": {
+    "legendary": [
+      {
+        "name": "Aegis of the Sun God",
+        "description": "A shield that blinds enemies with radiant light when struck.",
+        "price": 5000
+      },
+      {
+        "name": "Voidbreaker Barrier",
+        "description": "A shield that absorbs magic and reflects it back at attackers.",
+        "price": 4900
+      }
+    ],
+    "rare": [
+      {
+        "name": "Stormshield",
+        "description": "A shield that channels the power of storms, deflecting even the strongest blows.",
+        "price": 2500
+      },
+      {
+        "name": "Frostguard Shield",
+        "description": "This shield emanates a chilling aura, slowing any foe that comes near.",
+        "price": 2400
+      }
+    ],
+    "common": [
+      {
+        "name": "Steelwall Defender",
+        "description": "A large steel shield offering solid protection against physical attacks.",
+        "price": 900
+      },
+      {
+        "name": "Ironbuckler Shield",
+        "description": "A lightweight shield ideal for quick defense and mobility.",
+        "price": 850
       }
     ]
   },
@@ -227,127 +383,37 @@
     "legendary": [
       {
         "name": "Shoulders of the Colossus",
-        "description": "Pauldrons forged from the bones of ancient titans, enhancing the wearer's strength immeasurably."
+        "description": "Pauldrons forged from the bones of ancient titans, enhancing the wearer's strength immeasurably.",
+        "price": 4800
       },
       {
         "name": "Skybreaker, Mantle of the Stormlord",
-        "description": "These pauldrons harness the power of thunderstorms, striking nearby enemies with lightning."
+        "description": "These pauldrons harness the power of thunderstorms, striking nearby enemies with lightning.",
+        "price": 4700
       }
     ],
     "rare": [
       {
         "name": "Dawnshroud, Pauldrons of the Morning Star",
-        "description": "Glowing with the light of dawn, these pauldrons protect the wearer from dark magic."
+        "description": "Glowing with the light of dawn, these pauldrons protect the wearer from dark magic.",
+        "price": 2600
       },
       {
         "name": "Ironwrath, the Unyielding Shoulders",
-        "description": "These heavily fortified pauldrons grant unmatched defense against all forms of physical assault."
+        "description": "These heavily fortified pauldrons grant unmatched defense against all forms of physical assault.",
+        "price": 2500
       }
     ],
     "common": [
       {
         "name": "Wraithguard, Spectral Pauldrons",
-        "description": "Pauldrons that flicker with ghostly energy, granting the wearer the ability to walk among spirits."
+        "description": "Pauldrons that flicker with ghostly energy, granting the wearer the ability to walk among spirits.",
+        "price": 900
       },
       {
-        "name": "Mysticbinders, common Mantle",
-        "description": "Pauldrons that store latent magic, empowering the wearer with bursts of common energy."
-      }
-    ]
-  },
-  "chest_armor": {
-    "legendary": [
-      {
-        "name": "Heartforge, Breastplate of the Eternal Flame",
-        "description": "A chestplate that burns with an everlasting flame, warding off any attacks and regenerating the wearer."
-      },
-      {
-        "name": "Voidplate, Armor of the Infinite Dark",
-        "description": "This chest armor absorbs the essence of the void, making the wearer invulnerable to dark and void magic."
-      }
-    ],
-    "rare": [
-      {
-        "name": "Ironheart, Plate of the Unshaken",
-        "description": "A solid plate that grants its wearer steadfast courage, boosting their resistance to fear and magic."
-      },
-      {
-        "name": "Frostguard, the Frozen Bastion",
-        "description": "A chestplate covered in eternal ice, freezing any weapon that strikes it."
-      }
-    ],
-    "common": [
-      {
-        "name": "Spellweaver's Cuirass",
-        "description": "This chest armor is imbued with magical threads, boosting the wearer's spellcasting abilities."
-      },
-      {
-        "name": "Shadowsilk Vestment",
-        "description": "A lightweight but powerful chest armor that blends with the shadows, making the wearer nearly invisible."
-      }
-    ]
-  },
-  "gauntlets": {
-    "legendary": [
-      {
-        "name": "Fist of the Titans",
-        "description": "Gauntlets forged in the crucible of giants, granting immense physical strength and power."
-      },
-      {
-        "name": "Voidclaw, Gauntlets of the Nether",
-        "description": "These gauntlets tear through reality, allowing the wearer to strike through dimensions."
-      }
-    ],
-    "rare": [
-      {
-        "name": "Ironfist, Gauntlets of the Vanguard",
-        "description": "Heavily reinforced gauntlets that enhance the wearer's ability to block and parry attacks."
-      },
-      {
-        "name": "Frostbite Grips",
-        "description": "Gauntlets that emanate intense cold, freezing enemies upon contact."
-      }
-    ],
-    "common": [
-      {
-        "name": "Manaforged Gauntlets",
-        "description": "Gauntlets that channel magical energy, increasing the potency of spells cast by the wearer."
-      },
-      {
-        "name": "Spectralbind Gloves",
-        "description": "These gloves are woven from ethereal strands, allowing the wearer to interact with spirits and otherworldly entities."
-      }
-    ]
-  },
-  "leg_armor": {
-    "legendary": [
-      {
-        "name": "Treads of the Celestial Walker",
-        "description": "Leg armor that allows the wearer to walk between worlds, stepping into other dimensions at will."
-      },
-      {
-        "name": "Stormstride, Greaves of the Thunderlord",
-        "description": "These greaves harness the power of storms, allowing the wearer to move with the speed of lightning."
-      }
-    ],
-    "rare": [
-      {
-        "name": "Ironmarch Greaves",
-        "description": "Sturdy greaves that increase the wearer's stamina and endurance in battle."
-      },
-      {
-        "name": "Snowstep, Boots of the Frost Warden",
-        "description": "Leg armor that allows the wearer to walk on snow and ice without leaving a trace."
-      }
-    ],
-    "common": [
-      {
-        "name": "Voidwalker Boots",
-        "description": "These boots enable the wearer to step through shadows, traversing distances in the blink of an eye."
-      },
-      {
-        "name": "Spellstride, Greaves of the Arcanist",
-        "description": "Leg armor enchanted to boost agility and speed while amplifying the wearer’s magical abilities."
+        "name": "Mysticbinders, Common Mantle",
+        "description": "Pauldrons that store latent magic, empowering the wearer with bursts of common energy.",
+        "price": 850
       }
     ]
   }

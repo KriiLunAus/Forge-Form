@@ -49,6 +49,8 @@ function renderItems(data, catalogName) {
       const detailsElement = document.createElement("details");
       const summaryElement = document.createElement("summary");
       const addToCartBtn = document.createElement("button");
+      const price = document.createElement("div");
+      console.log(arnament);
 
       tierHeader.textContent =
         category.charAt(0).toUpperCase() + category.slice(1);
@@ -57,9 +59,12 @@ function renderItems(data, catalogName) {
       detailsElement.className = "detailsElement";
       detailsElement.textContent = arnament.description;
       addToCartBtn.textContent = "Add to cart";
+      price.textContent = `Cost: ${arnament.price}`;
+      price.className = "price";
 
       detailsElement.appendChild(summaryElement);
       listElement.appendChild(detailsElement);
+      listElement.appendChild(price);
       listElement.appendChild(addToCartBtn);
 
       listOfTiers.appendChild(listElement);

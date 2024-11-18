@@ -331,6 +331,14 @@ details[open] {
   margin-bottom: 15px;
 }
 
+.price {
+  /* display: inline; */
+  font-size: 20px;
+  text-align: center;
+  vertical-align: baseline;
+  padding-top: 8px;
+}
+
 @media screen and (min-width: 768px) {
   .cardModal h2 {
     font-size: 40px;
