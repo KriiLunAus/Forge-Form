@@ -1,7 +1,7 @@
 const listOfItmInCart = document.getElementById("listOfItmInCart");
-
 document.addEventListener("DOMContentLoaded", () => {
   let arrOfSavedItems = JSON.parse(localStorage.getItem("itemsInCart"));
+  console.log(arrOfSavedItems);
   if (arrOfSavedItems.length !== 0) {
     // adding element from storage
     arrOfSavedItems.forEach((element) => {
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       removeFromCartBtn.className = "removeBtn";
       removeBtnWrapper.className = "removeBtnWrapper";
       removeFromCartBtn.textContent = "\u00D7";
-      elementOfCartList.textContent = element;
+      elementOfCartList.textContent = element.name;
 
       listOfItmInCart.appendChild(elementOfCartList);
       elementOfCartList.appendChild(removeBtnWrapper);

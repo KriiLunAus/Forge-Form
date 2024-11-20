@@ -50,7 +50,6 @@ function renderItems(data, catalogName) {
       const summaryElement = document.createElement("summary");
       const addToCartBtn = document.createElement("button");
       const price = document.createElement("div");
-      console.log(arnament);
 
       tierHeader.textContent =
         category.charAt(0).toUpperCase() + category.slice(1);
@@ -139,9 +138,11 @@ document.addEventListener("click", (evt) => {
     evt.target.tagName === "BUTTON" &&
     evt.target.textContent === "Add to cart"
   ) {
-    const itemName =
-      evt.target.parentElement.querySelector("summary").textContent;
-    arrOfCartItems.push(itemName);
+    const item = {
+      name: evt.target.parentElement.querySelector("summary").textContent,
+      price: evt.target.parentElement.querySelector("div").textContent,
+    };
+    arrOfCartItems.push(item);
     localStorage.setItem("itemsInCart", JSON.stringify(arrOfCartItems));
   }
 });
