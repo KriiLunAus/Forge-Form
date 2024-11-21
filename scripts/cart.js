@@ -1,14 +1,16 @@
 const listOfItmInCart = document.getElementById("listOfItmInCart");
 document.addEventListener("DOMContentLoaded", () => {
   let arrOfSavedItems = JSON.parse(localStorage.getItem("itemsInCart"));
-  console.log(arrOfSavedItems);
+  let totalPrice = 0;
   if (arrOfSavedItems.length !== 0) {
     // adding element from storage
     arrOfSavedItems.forEach((element) => {
+      let elementPrice = element.price.replace(/\D/g, "");
+      totalPrice += Number(elementPrice);
+
       const elementOfCartList = document.createElement("li");
       const removeFromCartBtn = document.createElement("div");
       const removeBtnWrapper = document.createElement("div");
-
       removeFromCartBtn.className = "removeBtn";
       removeBtnWrapper.className = "removeBtnWrapper";
       removeFromCartBtn.textContent = "\u00D7";
@@ -31,10 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
+
     //adding button that removes all elements
     const removeAll = document.createElement("button");
+    const totalPriceHolder = document.createElement("p");
+    totalPriceHolder.innerHTML = `Total: ${totalPrice} coins`;
     removeAll.textContent = "Remove all  !!";
     removeAll.className = "removeAll";
+    listOfItmInCart.appendChild(totalPriceHolder)
     listOfItmInCart.appendChild(removeAll);
 
     removeAll.addEventListener("click", onRemove);
