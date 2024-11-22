@@ -36,11 +36,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //adding button that removes all elements
     const removeAll = document.createElement("button");
+    const priceWrapper = document.createElement("div");
     const totalPriceHolder = document.createElement("p");
-    totalPriceHolder.innerHTML = `Total: ${totalPrice} coins`;
+    const coinIcon = document.createElement("object");
+    priceWrapper.className="priceDiv";
+    coinIcon.className = "coinIcon";
+    coinIcon.data = "./svg/coin.svg";
+    totalPriceHolder.innerHTML = `Total: ${totalPrice}`;
+    totalPriceHolder.appendChild(coinIcon);
     removeAll.textContent = "Remove all  !!";
     removeAll.className = "removeAll";
-    listOfItmInCart.appendChild(totalPriceHolder)
+    priceWrapper.appendChild(totalPriceHolder);
+    priceWrapper.appendChild(coinIcon);
+    listOfItmInCart.appendChild(priceWrapper);
     listOfItmInCart.appendChild(removeAll);
 
     removeAll.addEventListener("click", onRemove);
