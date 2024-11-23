@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
         arrOfSavedItems = arrOfSavedItems.filter((item) => {
           return item !== element;
         });
+        totalPrice = arrOfSavedItems
+          .map((item) => Number(item.price))
+          .reduce((total, current) => total + current, 0);
+        updateTotalPriceDisplay(totalPrice)
         localStorage.setItem("itemsInCart", JSON.stringify(arrOfSavedItems));
         checkIfCartIsEmpty();
       });
@@ -42,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     priceWrapper.className="priceDiv";
     coinIcon.className = "coinIcon";
     coinIcon.data = "./svg/coin.svg";
+    totalPriceHolder.id = "totalPrice";
     totalPriceHolder.innerHTML = `Total: ${totalPrice}`;
     totalPriceHolder.appendChild(coinIcon);
     removeAll.textContent = "Remove all  !!";
@@ -53,15 +58,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     removeAll.addEventListener("click", onRemove);
 
-    function onRemove() {
-      arrOfSavedItems = [];
-      localStorage.setItem("itemsInCart", JSON.stringify(arrOfSavedItems));
-      listOfItmInCart.innerHTML = "";
-      checkIfCartIsEmpty();
-    }
   } else if (listOfItmInCart) {
     checkIfCartIsEmpty();
   }
+  
+  function onRemove() {
+    arrOfSavedItems = [];
+    localStorage.setItem("itemsInCart", JSON.stringify(arrOfSavedItems));
+    listOfItmInCart.innerHTML = "";
+    checkIfCartIsEmpty();
+  }
+
 
   function checkIfCartIsEmpty() {
     if (
@@ -75,3 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+function updateTotalPriceDisplay(price) {
+  const totalPriceHolder = document.getElementById("totalPrice");
+  totalPriceHolder.innerHTML = `Total: ${price}`;
+}
