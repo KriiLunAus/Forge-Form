@@ -375,9 +375,11 @@ details[open] {
 
   .cardModal li {
     flex-direction: row;
+    align-items: center;
   }
 
   .cardModal button {
+    height: 34px;
     font-size: 20px;
   }
 
@@ -389,7 +391,7 @@ details[open] {
     align-items: center;
   }
   .summaryElement {
-    width: 700px;
+    width: 600px;
     font-size: 30px;
     margin: 0;
   }
