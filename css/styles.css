@@ -69,6 +69,8 @@ html {
   margin: auto;
 
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   width: 100%;
@@ -108,16 +110,26 @@ html {
   );
 }
 
-.searchLabel {
-  margin-left: 30px;
-}
-
 .searchInput {
   width: 300px;
   padding: 8px;
   border-radius: 4px;
   border: none;
   outline: none;
+}
+
+.searchResult {
+  background-color: darkgray;
+  width: 70%;
+  height: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1443px) {

@@ -1,3 +1,5 @@
+import "./onSearch.js"
+
 //itemsColection fetch
 async function fetchItems(catalogName) {
   try {
@@ -157,3 +159,4 @@ document.addEventListener("click", (evt) => {
     localStorage.setItem("itemsInCart", JSON.stringify(arrOfCartItems));
   }
 });
+
