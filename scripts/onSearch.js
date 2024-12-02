@@ -6,6 +6,7 @@ let arrayOfArnamentsName = [];
 fetchItems();
 
 function onSearch(evt) {
+  searchResult.innerHTML = "";
     if (evt.target.value === "") {
         searchResult.classList.remove("active")
         searchResult.classList.add("hidden");
@@ -15,9 +16,8 @@ function onSearch(evt) {
 
         const searchedItems = arrayOfArnamentsName.filter((item) => {
           return item.toLowerCase().includes(evt.target.value.toLowerCase())
-        })
-        console.log(searchedItems)
-        
+        })   
+      searchResult.appendChild(renderSearchedItems(searchedItems));
     } 
 }
 
@@ -35,6 +35,7 @@ async function fetchItems() {
     }
 }
 
+
 function getAllNames(data) {
   for (const category in data) {
     const rarityLevels = data[category];
@@ -51,3 +52,15 @@ function getAllNames(data) {
   }
 }
 
+
+function renderSearchedItems(items) {
+  const listOfItems = document.createElement("ul"); 
+  
+
+  for (const item of items) { 
+    const listElement = document.createElement("li");
+    listElement.textContent = item;
+    listOfItems.appendChild(listElement);
+  }
+  return listOfItems;
+}

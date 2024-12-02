@@ -119,9 +119,12 @@ html {
 }
 
 .searchResult {
-  background-color: darkgray;
+  position: absolute;
+  top: 110px;
+  z-index: 999;
+  padding: 10px;
+  background-color: rgba(44, 40, 40);
   width: 70%;
-  height: 30px;
 }
 
 .hidden {
@@ -132,10 +135,20 @@ html {
   display: block;
 }
 
+.searchResult > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1443px) {
   .heroSection {
     min-height: 420px;
-    overflow: hidden;
+    /* overflow: hidden; */
+  }
+
+  .searchResult {
+    top: 240px;
   }
 }
 
@@ -146,6 +159,9 @@ html {
   .heroSection:before,
   .heroSection:after {
     height: 100px;
+  }
+  .searchResult {
+    top: 430px;
   }
 }
 /* ////////////////////////////////////////////////////////////////////
