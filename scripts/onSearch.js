@@ -2,7 +2,8 @@ const searchField = document.querySelector(".searchInput");
 const searchResult = document.querySelector(".searchResult");
 searchField.addEventListener("input", onSearch);
 
-let arrayOfArnamentsName = []; 
+
+const arnaments = []
 fetchItems();
 
 function onSearch(evt) {
@@ -14,9 +15,10 @@ function onSearch(evt) {
         searchResult.classList.remove("hidden")
         searchResult.classList.add("active");
 
-        const searchedItems = arrayOfArnamentsName.filter((item) => {
-          return item.toLowerCase().includes(evt.target.value.toLowerCase())
+      const searchedItems = arnaments.filter((item) => {
+          return item.name.toLowerCase().includes(evt.target.value.toLowerCase())
         })   
+      console.log(searchedItems)
       searchResult.appendChild(renderSearchedItems(searchedItems));
     } 
 }
@@ -43,8 +45,8 @@ function getAllNames(data) {
       const itemsArray = rarityLevels[rarity];
       if (Array.isArray(itemsArray)) {
         itemsArray.forEach(item => {
-          if (item.name) {
-            arrayOfArnamentsName.push(item.name)
+          if (item.name && item.price) {
+            arnaments.push(item)
           }
         });
       }
@@ -54,13 +56,25 @@ function getAllNames(data) {
 
 
 function renderSearchedItems(items) {
-  const listOfItems = document.createElement("ul"); 
+  const listOfItems = document.createElement("ul");
   
 
   for (const item of items) { 
     const listElement = document.createElement("li");
-    listElement.textContent = item;
+    const price = document.createElement("p");
+    const coinIcon = document.createElement("object");
+
+    coinIcon.className = "coinIcon";
+    coinIcon.data = "./svg/coin.svg";
+    price.textContent = item.price;
+    price.className = "price";
+    listElement.className = "listElement"
+    listElement.textContent = item.name;
+
+    price.appendChild(coinIcon);
+    listElement.appendChild(price);
     listOfItems.appendChild(listElement);
+
   }
   return listOfItems;
 }

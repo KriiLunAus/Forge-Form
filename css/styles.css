@@ -141,6 +141,12 @@ html {
   gap: 5px;
 }
 
+.listElement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1443px) {
   .heroSection {
     min-height: 420px;
@@ -386,6 +392,8 @@ details[open] {
   align-items: center;
 }
 .price {
+  display: flex;
+  align-items: center;
   padding-top: 5px;
   font-size: 20px;
 }
