@@ -15,11 +15,16 @@ searchField.addEventListener("input", ((evt) => {
   setTimeout(() => {
     searchResult.innerHTML = "";
     if (evt.target.value !== "") {
-    searchResult.classList.remove("hidden")
+    searchResult.classList.remove("hidden");
+    searchResult.classList.remove("noData");
     searchResult.classList.add("active");
     const searchedItems = arnaments.filter((item) => {
       return item.name.toLowerCase().includes(evt.target.value.toLowerCase())
     })
+      if (searchedItems.length === 0) {
+        searchResult.innerHTML = "No items found. Please try something else."
+        searchResult.classList.add("noData");
+      }
       searchResult.appendChild(renderSearchedItems(searchedItems));
   }
   }, 1000);

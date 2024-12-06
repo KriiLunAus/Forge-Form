@@ -148,6 +148,10 @@ html {
   gap: 5px;
 }
 
+.noData {
+  text-align: center;
+}
+
 .listElement {
   display: flex;
   justify-content: space-between;
@@ -164,7 +168,7 @@ html {
     font-size: 20px;
   }
   .searchResult {
-    top: 240px;
+    top: 250px;
   }
 }
 
