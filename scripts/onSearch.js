@@ -1,28 +1,29 @@
 const searchField = document.querySelector(".searchInput");
 const searchResult = document.querySelector(".searchResult");
-searchField.addEventListener("input", onSearch);
 
-
-const arnaments = []
 fetchItems();
+let arnaments = []
+searchField.addEventListener("input", ((evt) => {
+  
+  
+  if (evt.target.value === "") {
+    searchResult.classList.remove("active")
+    searchResult.classList.add("hidden");
+  }
 
-function onSearch(evt) {
-  searchResult.innerHTML = "";
-    if (evt.target.value === "") {
-        searchResult.classList.remove("active")
-        searchResult.classList.add("hidden");
-    }else if (evt.target.value !== "") {
-        searchResult.classList.remove("hidden")
-        searchResult.classList.add("active");
 
-      const searchedItems = arnaments.filter((item) => {
-          return item.name.toLowerCase().includes(evt.target.value.toLowerCase())
-        })   
-      console.log(searchedItems)
+  setTimeout(() => {
+    searchResult.innerHTML = "";
+    if (evt.target.value !== "") {
+    searchResult.classList.remove("hidden")
+    searchResult.classList.add("active");
+    const searchedItems = arnaments.filter((item) => {
+      return item.name.toLowerCase().includes(evt.target.value.toLowerCase())
+    })
       searchResult.appendChild(renderSearchedItems(searchedItems));
-    } 
-}
-
+  }
+  }, 1000);
+}));
 
 async function fetchItems() {
   try {
@@ -30,15 +31,15 @@ async function fetchItems() {
     if (!response.ok) {
       throw new Error("Something went wrong!");
     }
-      const data = await response.json();
-      getAllNames(data);
+    const data = await response.json();
+      getAllArnaments(data);
   } catch (error) {
     console.error(error);
     }
 }
 
 
-function getAllNames(data) {
+function getAllArnaments(data) {
   for (const category in data) {
     const rarityLevels = data[category];
     for (const rarity in rarityLevels) {
@@ -62,10 +63,10 @@ function renderSearchedItems(items) {
   for (const item of items) { 
     const listElement = document.createElement("li");
     const price = document.createElement("p");
-    const coinIcon = document.createElement("object");
+    const coinIcon = document.createElement("img");
 
     coinIcon.className = "coinIcon";
-    coinIcon.data = "./svg/coin.svg";
+    coinIcon.src = "./svg/coin.svg";
     price.textContent = item.price;
     price.className = "price";
     listElement.className = "listElement"

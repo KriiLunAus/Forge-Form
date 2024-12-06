@@ -124,7 +124,14 @@ html {
   z-index: 999;
   padding: 10px;
   background-color: rgba(44, 40, 40);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   width: 70%;
+  max-height: 390px;
+  overflow-y: auto;
+}
+
+.searchResult::-webkit-scrollbar {
+  display: none;
 }
 
 .hidden {
